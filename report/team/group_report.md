@@ -20,7 +20,20 @@ Nhóm đánh giá kinh tế của trợ lý hoàn phí LogiX-VN và đề xuất
 
 Chi phí mỗi việc thành công của toàn mẫu là **4.472 đ** [simulated]. Trong phạm vi `noi_dia` + `hang_nang`, chi phí là **4.599 đ/việc** sau khi cộng chi phí cố định ở quy mô 45.000 yêu cầu/tháng [simulated]. Chi phí cả hệ thống của mẫu là **5.865 đ/yêu cầu**, bằng **0,49×** mức 12.000 đ nhân viên tự làm [simulated]. Nhóm đề xuất pilot chỉ cho `noi_dia` và `hang_nang`; loại `quoc_te` khỏi phạm vi vì chi phí **1,88×** mức nhân viên tự làm và tỉ lệ thành công 27,3% [simulated].
 
-Trong mẫu, chỉ số chính là 82,83%, chỉ số dùng là 27,12%, và tỉ lệ mở lại trong 7 ngày là 4,25%. Hồ sơ launch v0 hiện đề xuất **Go có điều kiện**: xác nhận khóa chống trùng/đối soát sổ cái, Giám đốc vận hành chấp nhận MDE 6 điểm và power 0,64 nếu tác động thật chỉ là 5 điểm, đồng thời hoàn thiện logging có `trace_id`. **Kết quả duyệt chéo chưa được ghi nhận**; `phieu_cham.md` còn chờ buổi hội đồng.
+Trong mẫu, chỉ số chính là 82,83%, chỉ số dùng là 27,12%, và tỉ lệ mở lại trong 7 ngày là 4,25%. Hồ sơ launch v0 hiện đề xuất **Go có điều kiện**: xác nhận khóa chống trùng/đối soát sổ cái, Giám đốc vận hành chấp nhận MDE 6 điểm và power 0,64 nếu tác động thật chỉ là 5 điểm, đồng thời hoàn thiện logging có `trace_id`.
+
+### Kết quả duyệt chéo nhóm nhận được từ hội đồng
+
+Câu hỏi hội đồng đặt cho nhóm và câu trả lời của nhóm tại buổi:
+
+1. **"Nếu tuần đầu phải xem lại 100% thì chi phí mỗi việc thành công là bao nhiêu, và vẫn Go chứ?"**
+   Xem lại 100% trong phạm vi `noi_dia` + `hang_nang` cho **11.743 đ = 0,98×** của 12.000 đ (9 phút làm lại), hoặc **12.415 đ = 1,03×** nếu dùng 15,3 phút làm lại như dữ liệu [simulated]; hoà vốn khi mỗi lần xem lại ≤ 5,1 phút. Nhóm giữ **Go có điều kiện** vì Gate 2a chỉ duyệt pilot: tuần đầu chỉ chạy 10% (4 nhân viên), luật dừng chi phí (> 9.600 đ = 0,8× trong 2 tuần liên tiếp kể từ bước 0.25) sẽ thu hẹp về `noi_dia`, và phút `_simulated` được thay bằng phút đo thật sau tuần đầu.
+2. **"Chia 20 + 20 nhân viên thì cần cả 40 người, mà đợt chạy thử chỉ có 20 người ở 6 depot. 20 người còn lại lấy ở đâu?"**
+   Đợt chạy thử đúng là chỉ có 20 nhân viên ở 6 depot (D01–D06), nhưng LogiX-VN có 12 depot và 40 nhân viên CSKH; pilot mở ra cả 12 depot, 20 người còn lại là nhân viên của 6 depot chưa chạy thử. Bốc thăm ngẫu nhiên, phân tầng theo depot. Rủi ro 20 người cũ đã quen trợ lý: nhóm sẽ bổ sung phân tầng theo "đã dùng / chưa dùng" (mỗi nhóm khoảng 10 người cũ + 10 người mới) và khoá quyền trợ lý theo tài khoản cho nhóm đối chứng.
+3. **"Đồng thuận 19/20, vậy ca lệch là ca nào và quy tắc phân biệt là gì?"**
+   Ca lệch là **ca 8** (trợ lý dẫn "Điều 7.2 chính sách hoàn phí" không tồn tại, số tiền hoàn vẫn đúng): người gắn nhãn 1 chọn Hệ thống, người gắn nhãn 2 chọn Ngầm, nhóm thống nhất **Ngầm**. Quy tắc: số tiền đúng nên khách không phàn nàn và hệ thống không cảnh báo; khách thấy câu chữ nhưng không nhận ra nó sai, chỉ phát hiện qua kiểm tra đối chiếu chính sách. Khác ca 15, nơi nhân viên bắt được lỗi trước khi gửi nên là Hệ thống.
+
+Điểm và quyết định của hội đồng: nhóm bổ sung theo phiếu của nhóm chấm.
 
 ## 5. Khó khăn và cách xử lý
 
