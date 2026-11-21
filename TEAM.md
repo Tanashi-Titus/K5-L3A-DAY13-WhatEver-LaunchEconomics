@@ -58,6 +58,29 @@ Sao chép mục dưới đây cho từng thành viên.
 - Đối chiếu khớp 7/7 con số với phần tính tay của Người kiểm số trong `report/team/bang_chi_phi.md` (commit `a15364b`).
 - Báo cáo cá nhân: `report/team/2A202603636_HoangDangKien.md`.
 
+## Lê Quang Trường-2A202603663
+
+### Phần việc phụ trách
+
+- Vai trò **Người kiểm số**: tính tay các con số chính để đối chiếu với `src/lab13.py` (lệch cho phép ≤ 2%) và điền bảng chi phí nhiệm vụ A, B.
+- Cung cấp số liệu cho CP4 (`pilot_plan.yaml`) và CP5 (`chi_so.md`); soát tỉ lệ đồng thuận trong bảng lỗi CP3.
+
+### Đóng góp cụ thể
+
+- Điền đầy đủ `report/team/bang_chi_phi.md`: A1 (`1,20` · `1,25` · `1,25`), A2 đủ 9 dòng (hai dòng xem lại, làm lại có nhãn simulated), A3 4 loại, A4 chi phí cố định, B1 9 kịch bản, B2 xếp hạng, B3, B4 kèm câu trả lời có số.
+- Tính tay độc lập 7 con số và đối chiếu khớp 7/7 với code: `1,20`, `1,25`, tiền xem lại `1.780.000 đ`, chi phí mỗi việc thành công `4.472 đ`, cố định `1.185 đ`/việc, chi phí cả hệ thống giới hạn 2 lần `6.901.220 đ`, xem lại 100% `11.743 đ = 0,98×` [simulated].
+- Soát bảng lỗi: tỉ lệ đồng thuận `19/20 = 95%`, bảng khắc phục đủ 5 loại, mỗi dòng có cách phát hiện đo được và một vai trò phụ trách.
+- Hoàn thiện `report/team/pilot_plan.yaml`: chú thích D1 (a–e), D2, đánh đổi (MDE 6 điểm, power `0,64` ở +5 điểm), ngưỡng an toàn (cao hơn đối chứng ≥ 2 điểm, trần 6%; hiện tại `4,25%`), cách chia theo nhân viên 20 + 20 (`n_per_arm 859`, `DE 6,96`), 4 luật dừng NẾU – TRONG – THÌ – KHÔNG THÌ, rollback, ngày quyết định, danh sách số simulated.
+- Điền `report/team/chi_so.md`: tính thử 3 chỉ số E1 (`82,83%`, `27,12%`, `4,25%`) và 3 dòng rủi ro kinh tế E2 lấy số từ bảng độ nhạy (làm lại `+51,8%`, xem lại `+40,7%`, cố định `1.185 → 2.370 đ`/việc) [simulated].
+- Viết báo cáo cá nhân tại `report/team/2A202603663_LeQuangTruong.md`.
+
+### Bằng chứng
+
+- Commit `a15364b` (`docs(report): điền bảng chi phí A–B, chú thích D1 và ba chỉ số E1`).
+- Commit `5100ce0` (`docs(report): hoàn thiện kế hoạch pilot, rủi ro kinh tế và báo cáo cá nhân người kiểm số`).
+- File: `report/team/bang_chi_phi.md` (mục "Đối chiếu của người kiểm số"), `report/team/pilot_plan.yaml`, `report/team/chi_so.md`.
+- Báo cáo cá nhân: `report/team/2A202603663_LeQuangTruong.md`.
+
 ## HoVaTen-MSSV
 
 ### Phần việc phụ trách
