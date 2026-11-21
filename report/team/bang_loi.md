@@ -4,7 +4,7 @@
 
 ## Hai bộ nhãn độc lập
 
-Người gắn nhãn 1: Thành viên 1 · Người gắn nhãn 2: GMTuyen (gắn độc lập trong 8 phút, không trao đổi)
+Người gắn nhãn 1: Đỗ Hoàng Phúc · Người gắn nhãn 2: Giáp Mạnh Tuyên (gắn độc lập trong 8 phút, không trao đổi)
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |

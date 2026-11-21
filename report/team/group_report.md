@@ -33,7 +33,7 @@ Câu hỏi hội đồng đặt cho nhóm và câu trả lời của nhóm tại
 3. **"Đồng thuận 19/20, vậy ca lệch là ca nào và quy tắc phân biệt là gì?"**
    Ca lệch là **ca 8** (trợ lý dẫn "Điều 7.2 chính sách hoàn phí" không tồn tại, số tiền hoàn vẫn đúng): người gắn nhãn 1 chọn Hệ thống, người gắn nhãn 2 chọn Ngầm, nhóm thống nhất **Ngầm**. Quy tắc: số tiền đúng nên khách không phàn nàn và hệ thống không cảnh báo; khách thấy câu chữ nhưng không nhận ra nó sai, chỉ phát hiện qua kiểm tra đối chiếu chính sách. Khác ca 15, nơi nhân viên bắt được lỗi trước khi gửi nên là Hệ thống.
 
-Điểm và quyết định của hội đồng: nhóm bổ sung theo phiếu của nhóm chấm.
+**Điểm và quyết định của hội đồng:** nhóm 6 DTL (Lục Anh Tuấn, Nguyễn Thùy Lam, Mai Lâm Tấn Đạt) chấm nhóm **30/30** (đề xuất khớp bằng chứng 10/10 · số giả lập và phạm vi 10/10 · pilot ra được quyết định 10/10), quyết định **Go có điều kiện**, trùng với đề xuất trong `ho_so_launch_v0.md`.
 
 ## 5. Khó khăn và cách xử lý
 
