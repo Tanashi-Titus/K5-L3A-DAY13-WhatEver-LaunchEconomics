@@ -93,7 +93,7 @@ Sao chép mục dưới đây cho từng thành viên.
 - Tự phân loại độc lập 20 ca lỗi và ghi lý do cho từng nhãn trong `report/team/bang_loi.md`.
 - Sau khi đối chiếu hai bộ nhãn, ghi nhận đồng thuận `19/20 = 95%`; giải thích bất đồng ở ca 8 và quy tắc phân biệt giữa lỗi hệ thống đã lộ ra với lỗi ngầm chỉ phát hiện khi kiểm tra.
 - Đề xuất cách khắc phục cho năm loại lỗi, kèm event, ngưỡng, tần suất phát hiện và vai trò phụ trách.
-- Hồ sơ launch v0 vẫn cần được cập nhật sau khi nhóm chốt đủ số liệu và đề xuất cuối.
+- Tổng hợp bản dự thảo 7 mục trong `report/team/ho_so_launch_v0.md` từ kết quả A–E; mục pilot còn chờ Giám đốc vận hành ký chấp nhận đánh đổi cỡ mẫu và nhóm ghi kết quả duyệt chéo.
 
 ### Bằng chứng
 
