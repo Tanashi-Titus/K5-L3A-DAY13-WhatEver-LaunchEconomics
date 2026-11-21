@@ -35,5 +35,6 @@ Viết "chỉ số trong đợt chạy thử là …", không viết "trợ lý 
 
 | Rủi ro | Tác động đã tính | Dấu hiệu theo dõi | Hành động | Người phụ trách |
 | --- | --- | --- | --- | --- |
-| ... | ... | ... | ... | ... |
-| ... | ... | ... | ... | ... |
+| Số ca làm lại tăng (yếu tố nhạy nhất) | Làm lại gấp đôi: 4.472 → 6.787 đ mỗi việc thành công (+51,8%) [simulated] | Tỉ lệ yêu cầu `ket_qua` = `lam_lai` theo tuần, nối event với `trace_id`; cảnh báo khi vượt 2 lần mức đợt chạy thử | Rà nguyên nhân trong bảng lỗi, thu hẹp loại yêu cầu có tỉ lệ làm lại cao; vượt ngưỡng 2 tuần liền thì dừng mở rộng | PM trợ lý hoàn phí |
+| Tỉ lệ xem lại hoặc thời gian xem lại tăng | Xem lại gấp đôi: 6.292 đ (+40,7%); xem lại 100% `noi_dia` + `hang_nang`: 11.743 đ = 0,98× của 12.000 đ, hoà vốn khi mỗi lần xem lại ≤ 5,1 phút [simulated] | Phút xem lại trung bình mỗi yêu cầu và tỉ lệ yêu cầu được xem lại, theo tuần | Giữ xem lại theo mẫu thay vì 100%; trung bình vượt 5 phút/lần thì rút gọn màn hình xem lại hoặc giảm phạm vi | Trưởng nhóm CSKH |
+| Khối lượng pilot nhỏ làm chi phí cố định mỗi việc tăng | 40 triệu đ/tháng: 1.185 đ/việc ở 45.000 yêu cầu/tháng, 2.370 đ/việc ở một nửa khối lượng → 0,38× lên 0,48× [simulated] | Số việc thành công mỗi tháng trong phạm vi pilot | Báo cáo chi phí kèm khối lượng; khối lượng dưới một nửa kế hoạch thì tính lại trước ngày quyết định | Giám đốc vận hành |
