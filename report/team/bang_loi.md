@@ -15,7 +15,7 @@ Người gắn nhãn 1: Thành viên 1 · Người gắn nhãn 2: GMTuyen (gắn
 | 5 | Ngầm | Ngầm | Có | Ngầm |
 | 6 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 8 | Hệ thống | Ngầm | Không | Hệ thống |
+| 8 | Hệ thống | Ngầm | Không | Ngầm |
 | 9 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
@@ -35,7 +35,7 @@ Người gắn nhãn 1: Thành viên 1 · Người gắn nhãn 2: GMTuyen (gắn
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-- **Ca 8 (`Hệ thống`, không phải `Ngầm`):** Dù số tiền hoàn vẫn đúng, việc trợ lý trích dẫn sai "Điều 7.2" không tồn tại đã lộ ra ngay trong nội dung trả lời; chỉ gắn `Ngầm` khi sai sót ẩn hoàn toàn cho tới khi kiểm tra mẫu.
+- **Ca 8 (`Ngầm`, không phải `Hệ thống`):** Dù bịa "Điều 7.2 chính sách hoàn phí", số tiền hoàn vẫn đúng nên người dùng không phàn nàn và hệ thống không phát cảnh báo; nếu không kiểm tra đối chiếu lại chính sách thì không phát hiện được lỗi.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
