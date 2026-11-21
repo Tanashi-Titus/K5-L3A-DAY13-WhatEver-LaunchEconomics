@@ -4,8 +4,8 @@
 
 - Họ tên: Lê Quang Trường
 - MSSV: 2A202603663
-- Email:
-- GitHub: letruong23805
+- Email:26ai.truonglq@vinuni.edu.vn
+- GitHub: Letruong238
 - Vai trong nhóm: Người kiểm số
 
 ## 2. Phần việc phụ trách
