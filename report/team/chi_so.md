@@ -14,7 +14,7 @@ Chỉ số trong đợt chạy thử (1.200 yêu cầu) là 82,83% (chính), 27,
 
 ## Danh sách event
 
-Mười event (vượt yêu cầu tối thiểu 6), mọi event đều mang `trace_id` để nối với trace của agent và phục vụ đối soát chi phí thật thay cho cột `_simulated`.
+Mười một event (vượt yêu cầu tối thiểu 6), mọi event đều mang `trace_id` để nối với trace của agent và phục vụ đối soát chi phí thật thay cho cột `_simulated`.
 
 | Event | Ai tạo | Thuộc tính chính | Thời điểm |
 | --- | --- | --- | --- |
@@ -24,6 +24,7 @@ Mười event (vượt yêu cầu tối thiểu 6), mọi event đều mang `tra
 | `staff_review_decision` | Nhân viên CSKH | `staff_id, quyet_dinh (giu/sua/bo), phut_xem_lai, trace_id` | Khi nhân viên bấm giữ, sửa hoặc bỏ gợi ý (đo phút thật) |
 | `staff_rework_completed` | Nhân viên CSKH | `staff_id, phut_lam_lai, ly_do, trace_id` | Khi nhân viên hoàn tất làm lại một ca sai (đo phút thật) |
 | `refund_ledger_write` | Dịch vụ sổ cái | `idempotency_key, so_tien_vnd, ket_qua (ok/loi), trace_id` | Khi ghi lệnh hoàn tiền vào sổ cái (đối soát chống hoàn trùng) |
+| `refund_success_claimed` | Agent | `request_id, ledger_status, message_id, trace_id` | Khi agent gửi thông báo đã hoàn tiền thành công cho khách; đối soát với kết quả sổ cái |
 | `handoff_to_staff` | Agent | `reason, tom_tat, trace_id` | Khi agent chuyển yêu cầu sang nhân viên (ca 4) |
 | `ticket_closed` | Hệ thống ticket | `request_id, closed_at, trace_id` | Khi yêu cầu hoàn phí được đóng |
 | `ticket_reopened` | Khách hàng / Hệ thống ticket | `request_id, reopened_at, reason, trace_id` | Khi khách mở lại yêu cầu sau khi đóng (ca 3) |
@@ -37,6 +38,7 @@ Mười event (vượt yêu cầu tối thiểu 6), mọi event đều mang `tra
 - **Dùng tự đề xuất (% yêu cầu trong phạm vi của nhóm can thiệp có mở gợi ý trợ lý):** `agent_suggestion_shown` (lọc `arm = treatment`, ghép `loai` từ `refund_request_created`) chia tổng `refund_request_created` thuộc `noi_dia` + `hang_nang` của nhóm can thiệp; đồng thời dùng `staff_id` trên `agent_suggestion_shown` để kiểm soát rò rỉ sang nhóm đối chứng.
 - **An toàn tự đề xuất (% đơn hoàn sai số tiền qua kiểm tra mẫu hằng tuần):** `audit_sample_checked` (số đơn có `so_tien_da_hoan != so_tien_dung` chia tổng số đơn mẫu kiểm tra trong tuần); kết hợp `refund_ledger_write` để bắt ca hoàn trùng hoặc báo thành công không khớp sổ cái (`trace_id`).
 - **Bổ trợ đo chi phí thật trong pilot:** `agent_run_completed` (token, tool mọi lần chạy) + `staff_review_decision` (`phut_xem_lai` đo thật) + `staff_rework_completed` (`phut_lam_lai` đo thật) thay cho hai cột `_simulated`.
+- **Đối soát an toàn:** `refund_success_claimed` phải ghép với `refund_ledger_write` cùng `trace_id`; ngưỡng dừng là ≥1 thông báo thành công không có bản ghi sổ cái `ok`.
 
 ## E2 · Rủi ro kinh tế
 

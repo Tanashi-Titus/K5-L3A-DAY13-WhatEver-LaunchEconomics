@@ -14,7 +14,7 @@ Nhóm đánh giá kinh tế của trợ lý hoàn phí LogiX-VN và đề xuất
 - **A–B:** `src/lab13.py` tính chi phí thành công, tách theo loại yêu cầu, chi phí cố định và 9 kịch bản độ nhạy; các bảng và đối chiếu tay nằm trong `bang_chi_phi.md`.
 - **C:** Hai người gắn nhãn làm độc lập; đạt đồng thuận 19/20 ca (95%). `bang_loi.md` ghi quy tắc xử lý ca 8 và cách phát hiện/khắc phục cho 5 loại lỗi.
 - **D:** `pilot_plan.yaml` đề xuất chia ngẫu nhiên theo nhân viên 20/20, MDE 6 điểm, 859 mẫu hiệu dụng mỗi nhóm (tương ứng 299 yêu cầu mỗi nhân viên). Kế hoạch có luật dừng an toàn, chi phí và sử dụng; chờ Giám đốc vận hành ký chấp nhận đánh đổi cỡ mẫu.
-- **E:** `chi_so.md` có 5 chỉ số (3 chỉ số thử và 2 chỉ số nhóm đề xuất), 10 event mang `trace_id`, phần kiểm tra chéo chỉ số và 3 rủi ro kinh tế.
+- **E:** `chi_so.md` có 5 chỉ số (3 chỉ số thử và 2 chỉ số nhóm đề xuất), 11 event mang `trace_id`, phần kiểm tra chéo chỉ số và 3 rủi ro kinh tế.
 
 ## 4. Kết quả và đề xuất
 
@@ -35,7 +35,7 @@ Với 40 nhân viên, phân cụm theo nhân viên không đủ lực thống k�
 
 ## 7. Hạn chế và hướng cải thiện
 
-Dữ liệu và thời gian nhân viên đều giả lập; số chi phí cần được thay bằng thời gian đo thật trong pilot. Dữ liệu chạy thử chưa có đối chứng nên các chỉ số mô tả hiện trạng, chưa chứng minh tác động nhân quả. Trước khi gửi hồ sơ cuối, nhóm cần triển khai logging theo schema event, thống nhất tên event giữa bảng lỗi và `chi_so.md`, xác nhận các ngưỡng vận hành, lấy chữ ký chấp nhận đánh đổi pilot và ghi kết quả duyệt chéo.
+Dữ liệu và thời gian nhân viên đều giả lập; số chi phí cần được thay bằng thời gian đo thật trong pilot. Dữ liệu chạy thử chưa có đối chứng nên các chỉ số mô tả hiện trạng, chưa chứng minh tác động nhân quả. Trước khi gửi hồ sơ cuối, nhóm cần triển khai logging theo schema event, xác nhận các ngưỡng vận hành, lấy chữ ký chấp nhận đánh đổi pilot và ghi kết quả duyệt chéo.
 
 ## 8. Tài liệu tham khảo
 
