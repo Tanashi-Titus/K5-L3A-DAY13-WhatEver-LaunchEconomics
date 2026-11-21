@@ -4,40 +4,42 @@
 
 ## Hai bộ nhãn độc lập
 
-Người gắn nhãn 1: chờ bộ độc lập · Người gắn nhãn 2: bộ nhãn đã cung cấp (độc lập)
+Người gắn nhãn 1: Thành viên 1 · Người gắn nhãn 2: GMTuyen (gắn độc lập trong 8 phút, không trao đổi)
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
-| 1 | — | Do người dùng | Chờ đối chiếu | Chờ đối chiếu |
-| 2 | — | Hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 3 | — | Ngữ cảnh | Chờ đối chiếu | Chờ đối chiếu |
-| 4 | — | Giới hạn hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 5 | — | Ngầm | Chờ đối chiếu | Chờ đối chiếu |
-| 6 | — | Do người dùng | Chờ đối chiếu | Chờ đối chiếu |
-| 7 | — | Hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 8 | — | Ngầm | Chờ đối chiếu | Chờ đối chiếu |
-| 9 | — | Do người dùng | Chờ đối chiếu | Chờ đối chiếu |
-| 10 | — | Ngữ cảnh | Chờ đối chiếu | Chờ đối chiếu |
-| 11 | — | Giới hạn hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 12 | — | Ngầm | Chờ đối chiếu | Chờ đối chiếu |
-| 13 | — | Giới hạn hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 14 | — | Do người dùng | Chờ đối chiếu | Chờ đối chiếu |
-| 15 | — | Hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 16 | — | Ngữ cảnh | Chờ đối chiếu | Chờ đối chiếu |
-| 17 | — | Ngầm | Chờ đối chiếu | Chờ đối chiếu |
-| 18 | — | Ngữ cảnh | Chờ đối chiếu | Chờ đối chiếu |
-| 19 | — | Giới hạn hệ thống | Chờ đối chiếu | Chờ đối chiếu |
-| 20 | — | Hệ thống | Chờ đối chiếu | Chờ đối chiếu |
+| 1 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 2 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 5 | Ngầm | Ngầm | Có | Ngầm |
+| 6 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 7 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 8 | Hệ thống | Ngầm | Không | Hệ thống |
+| 9 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 12 | Ngầm | Ngầm | Có | Ngầm |
+| 13 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 14 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 15 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 17 | Ngầm | Ngầm | Có | Ngầm |
+| 18 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** Chưa tính; chờ bộ nhãn độc lập của người gắn nhãn 1.
+**Tỉ lệ đồng thuận:** 19 / 20 = 95%
 
 ## Quy tắc phân biệt cho các ca không trùng
 
-Điền sau khi hai bộ nhãn đã được đối chiếu; hiện chưa xác định ca nào không trùng.
+Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
+
+- **Ca 8 (`Hệ thống`, không phải `Ngầm`):** Dù số tiền hoàn vẫn đúng, việc trợ lý trích dẫn sai "Điều 7.2" không tồn tại đã lộ ra ngay trong nội dung trả lời; chỉ gắn `Ngầm` khi sai sót ẩn hoàn toàn cho tới khi kiểm tra mẫu.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
-Các nhãn dưới đây giữ nguyên bộ phân loại do người gắn nhãn 2 cung cấp. Mỗi cách phát hiện nêu event, ngưỡng và tần suất; người phụ trách là một vai trò.
+Cách phát hiện phải đo được (event, ngưỡng, tần suất). Người phụ trách là một vai trò, không ghi "cả đội".
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
