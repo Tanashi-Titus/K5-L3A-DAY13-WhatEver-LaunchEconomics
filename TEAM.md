@@ -81,16 +81,22 @@ Sao chép mục dưới đây cho từng thành viên.
 - File: `report/team/bang_chi_phi.md` (mục "Đối chiếu của người kiểm số"), `report/team/pilot_plan.yaml`, `report/team/chi_so.md`.
 - Báo cáo cá nhân: `report/team/2A202603663_LeQuangTruong.md`.
 
-## HoVaTen-MSSV
+## Giáp Mạnh Tuyên-2A202603648
 
 ### Phần việc phụ trách
 
--
+- Vai trò **Người gắn nhãn 2**: phân loại độc lập 20 ca lỗi ở CP3 trước khi trao đổi với người gắn nhãn 1.
+- Vai trò **kiêm giữ hồ sơ**: theo dõi và cập nhật `report/team/ho_so_launch_v0.md` từ đầu buổi, tổng hợp số liệu A–E do các thành viên cung cấp.
 
 ### Đóng góp cụ thể
 
--
+- Tự phân loại độc lập 20 ca lỗi và ghi lý do cho từng nhãn trong `report/team/bang_loi.md`.
+- Sau khi đối chiếu hai bộ nhãn, ghi nhận đồng thuận `19/20 = 95%`; giải thích bất đồng ở ca 8 và quy tắc phân biệt giữa lỗi hệ thống đã lộ ra với lỗi ngầm chỉ phát hiện khi kiểm tra.
+- Đề xuất cách khắc phục cho năm loại lỗi, kèm event, ngưỡng, tần suất phát hiện và vai trò phụ trách.
+- Hồ sơ launch v0 vẫn cần được cập nhật sau khi nhóm chốt đủ số liệu và đề xuất cuối.
 
 ### Bằng chứng
 
--
+- `report/team/bang_loi.md`: bộ nhãn người gắn nhãn 2, phần đối chiếu 19/20 và bảng khắc phục 5 loại.
+- Commit `28f6c84`: ghi bộ nhãn và phần khắc phục của người gắn nhãn 2.
+- Dùng Codex hỗ trợ cấu trúc bảng và tiêu chí phát hiện; các nhãn lỗi do người gắn nhãn 2 tự quyết định độc lập.
