@@ -100,3 +100,25 @@ Sao chép mục dưới đây cho từng thành viên.
 - `report/team/bang_loi.md`: bộ nhãn người gắn nhãn 2, phần đối chiếu 19/20 và bảng khắc phục 5 loại.
 - Commit `28f6c84`: ghi bộ nhãn và phần khắc phục của người gắn nhãn 2.
 - Dùng Codex hỗ trợ cấu trúc bảng và tiêu chí phát hiện; các nhãn lỗi do người gắn nhãn 2 tự quyết định độc lập.
+
+## Đỗ Hoàng Phúc-2A202603652
+
+### Phần việc phụ trách
+
+- Vai trò **Người gắn nhãn 1**: đọc đề, theo dõi điều kiện "Xong khi" và kiểm tra tiêu chí chấm điểm (`RUBRIC.md`) cho các checkpoint CP1–CP5.
+- Gắn nhãn độc lập 20 ca lỗi ở CP3 theo khung 5 loại của Google PAIR, đối chiếu với Người gắn nhãn 2 và hoàn thiện `report/team/bang_loi.md`.
+- Cài đặt môi trường Python (`src/.venv`) trên máy cá nhân và chạy kiểm tra chéo `src/lab13.py` (xác nhận đạt 3/3 phép thử A1 và các bảng A, B, D1, E1).
+
+### Đóng góp cụ thể
+
+- Tự phân tích và gắn nhãn độc lập 20 ca lỗi trong `docs/Ngay13_Lab13_De_bai_hoc_vien.docx` vào cột `Nhãn người 1` của `report/team/bang_loi.md` (không trao đổi trước khi so nhãn).
+- Đối chiếu với bộ nhãn của Người gắn nhãn 2 (`Giáp Mạnh Tuyên`): đạt tỉ lệ đồng thuận `19/20 = 95%` (vượt ngưỡng ≥ 80% của rubric).
+- Thống nhất cùng nhóm nhãn cho ca không trùng duy nhất (Ca 8: `Ngầm`) và viết quy tắc phân biệt trong `report/team/bang_loi.md`.
+- Rà soát các file hồ sơ nộp (`bang_chi_phi.md`, `pilot_plan.yaml`, `chi_so.md`, `ho_so_launch_v0.md`) theo điều kiện "Xong khi" của `CHECKPOINTS.md` và viết báo cáo cá nhân tại `report/team/2A202603652_DoHoangPhuc.md`.
+
+### Bằng chứng
+
+- Commit `ab5937e` (`docs(report): complete annotator 1 labels and 95% agreement in bang_loi.md`).
+- Commit `2e7b08e` (`docs(report): update case 8 agreed label to Ngầm in bang_loi.md`).
+- Commit `0eeff7e` (`docs(report): add personal report for Do Hoang Phuc`).
+- File: `report/team/bang_loi.md`, `report/team/2A202603652_DoHoangPhuc.md`.
